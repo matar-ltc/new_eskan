@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <title>إسكان الرؤيا البيضاء - شركة عقارية</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/video-styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container-xxl bg-white p-0">
+        <!-- Spinner Start -->
+        <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+            <div class="spinner-border text-primary" style="width: 3rem; height: 3rem;" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar Start -->
+        <div class="container-fluid nav-bar bg-transparent">
+            <nav class="navbar navbar-expand-lg navbar-light py-0 px-4">
+                <a href="index.html" class="navbar-brand d-flex align-items-center text-center">
+                    <div class="icon p-2">
+                        <img class="img-fluid" src="img/new_logo_transparent.png" alt="Icon" style="width: 40px; height: 30px;object-fit: cover;">
+                    </div>
+                    <h1 class="brand-name m-0 text-primary">إسكان الرؤيا البيضاء</h1>
+                </a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <a href="index.html" class="nav-item nav-link">الرئيسية</a>
+                        <a href="about.html" class="nav-item nav-link">من نحن</a>
+                        <a href="property-list.html" class="nav-item nav-link">العقارات</a>
+                        <a href="calculator.html" class="nav-item nav-link">حاسبة التمويل</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- Navbar End -->
+
+
+        <!-- Header Start -->
+        <div class="container-fluid header p-0 position-relative" style="height: 100vh; min-height: 600px;">
+            <!-- Full Screen Video Background -->
+            <div class="hero-video-container position-absolute top-0 start-0 w-100 h-100">
+                <video autoplay loop muted plays-inline class="w-100 h-100" style="object-fit: cover;">
+                    <source src="img/20256028-uhd_3840_2160_24fps.mp4" type="video/mp4">
+                </video>
+                <div class="video-overlay position-absolute top-0 start-0 w-100 h-100" style="background: linear-gradient(135deg, rgba(0,0,0,0.4), rgba(0,0,0,0.2));"></div>
+                <div class="gradient"></div>
+            </div>
+            
+            <!-- Content Overlay -->
+            <div class="container h-100 d-flex align-items-center">
+                <div class="row w-100" style="justify-content: center;">
+                    <div class="col-lg-8 col-xl-7">
+                        <div class="hero-content text-white position-relative z-index-1">
+                            <h1 class="display-4 fw-bold mb-4 animated fadeIn" style="text-align: center;">نحول رؤيتك إلى واقع عقاري</h1>
+                            <p class="fs-5 mb-4 animated fadeIn" style="animation-delay: 0.3s;text-align: center;">استكشف مجموعتنا الحصرية من العقارات الفاخرة، المصممة للارتقاء بأسلوب حياتك وتحقيق تطلعاتك.</p>
+                            <div class="animated fadeIn" style="animation-delay: 0.6s;display:flex;justify-content: center;gap:0.5rem;">
+                                <a href="property-list.html" class="btn btn-outline-light btn-lg py-3 px-5 me-3" style="text-align: center;">ابدأ الآن</a>
+                                <a href="about.html" class="btn btn-outline-light btn-lg py-3 px-5" style="text-align: center;">تعرف علينا</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header End -->
+
+
+        <!-- Search Start -->
+        <div class="container-fluid bg-primary mb-5 wow fadeIn" data-wow-delay="0.1s" style="padding: 35px;">
+            <div class="container">
+                <div class="row g-2">
+                    <div class="col-md-10">
+                        <div class="row g-2">
+                            <div class="col-md-4">
+                                <input type="text" class="form-control border-0 py-3" placeholder="ابحث عن عقار">
+                            </div>
+                            <div class="col-md-4">
+                                <select class="form-select border-0 py-3">
+                                    <option selected>نوع العقار</option>
+                                    <option value="1">شقة</option>
+                                    <option value="2">فيلا</option>
+                                    <option value="3">عمارة</option>
+                                </select>
+                            </div>
+                            <div class="col-md-4">
+                                <select class="form-select border-0 py-3">
+                                    <option selected>الحي</option>
+                                    <option value="1">النزهة</option>
+                                    <option value="2">الصفا</option>
+                                    <option value="3">النعيم</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <button class="btn btn-dark border-0 w-100 py-3">بحث</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Search End -->
+        <!-- About Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-5 align-items-center">
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                        <div class="about-img position-relative overflow-hidden p-5 px-0 text-center">
+                            <h1 class="mb-4">من نحن</h1>
+                            <p class="mb-4" >في قلب مدينة جدة النابض بالحياة، وُلدت "إسكان الرؤيا البيضاء". لم نأتِ لنكون مجرد شركة تسويق عقاري أخرى، بل لنبني منظومة تسويقية صافية، شفافة، وفعّالة، تحوّل المشاريع إلى معالم ناجحة، والأحلام إلى منازل حقيقية.</p>
+                            <p><i class="fa fa-check" style="margin-left:1rem; color: var(--primary);"></i>نحن لا نبيع العقارات، بل نبني شراكات مستدامة</p>
+                            <p><i class="fa fa-check" style="margin-left:1rem; color: var(--primary);"></i>نقف بجانب كل عميل كمستشار أمين</p>
+                            <p><i class="fa fa-check" style="margin-left:1rem; color: var(--primary);"></i>نحول الأحلام إلى منازل حقيقية</p>
+                            <a class="btn btn-outline-light py-3 px-5 mt-3" href="about.html">تعرف علينا أكثر</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+        <!-- Category Start -->
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3" style="color: var(--secondary)">أنواع العقارات</h1>
+                    <p>سواء كنت مالكًا، مطورًا عقاريًا، أو مشترياً، نضمن لك تجربة عقارية متكاملة وآمنة من نشر العقار وحتى إتمام البيع</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                            <div class="rounded p-4">
+                                <div class="icon mb-3">
+                                    <img class="img-fluid" src="img/icon-apartment.png" alt="Icon">
+                                </div>
+                                <h6>شقق</h6>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.2s">
+                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                            <div class="rounded p-4">
+                                <div class="icon mb-3">
+                                    <img class="img-fluid" src="img/icon-villa.png" alt="Icon">
+                                </div>
+                                <h6>فلل</h6>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                            <div class="rounded p-4">
+                                <div class="icon mb-3">
+                                    <img class="img-fluid" src="img/icon-house.png" alt="Icon">
+                                </div>
+                                <h6>منازل</h6>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.4s">
+                        <a class="cat-item d-block bg-light text-center rounded p-3" href="">
+                            <div class="rounded p-4">
+                                <div class="icon mb-3">
+                                    <img class="img-fluid" src="img/icon-building.png" alt="Icon">
+                                </div>
+                                <h6>عمائر</h6>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Category End -->
+
+
+
+
+
+        <!-- Property List Start -->
+        <!-- <div class="container-xxl py-5">
+            <div class="container">
+                <div class="row g-0 gx-5 align-items-end">
+                    <div class="col-lg-6">
+                        <div class="text-start mx-auto mb-5 wow slideInLeft" data-wow-delay="0.1s">
+                            <h1 class="mb-3">قائمة العقارات</h1>
+                            <p>استكشف مجموعتنا المتنوعة من العقارات المميزة في أفضل المواقع بجدة</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-start text-lg-end wow slideInRight" data-wow-delay="0.1s">
+                        <ul class="nav nav-pills d-inline-flex justify-content-end mb-5">
+                            <li class="nav-item me-2">
+                                <a class="btn btn-outline-primary active" data-bs-toggle="pill" href="#tab-1">مميز</a>
+                            </li>
+                            <li class="nav-item me-2">
+                                <a class="btn btn-outline-primary" data-bs-toggle="pill" href="#tab-2">للبيع</a>
+                            </li>
+                            <li class="nav-item me-0">
+                                <a class="btn btn-outline-primary" data-bs-toggle="pill" href="#tab-3">للإيجار</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="tab-content">
+                    <div id="tab-1" class="tab-pane fade show p-0 active">
+                        <div class="row g-4">
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/property-1.jpg" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">للبيع</div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">شقة</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <h5 class="text-primary mb-3">1,200,000 ريال</h5>
+                                        <a class="d-block h5 mb-2" href="">Golden Urban House للبيع</a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>شارع التحلية، جدة</p>
+                                    </div>
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>120 متر</small>
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>3 غرف</small>
+                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>2 حمام</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/property-2.jpg" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">للإيجار</div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">فيلا</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <h5 class="text-primary mb-3">1,200,000 ريال</h5>
+                                        <a class="d-block h5 mb-2" href="">Golden Urban House للبيع</a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>شارع التحلية، جدة</p>
+                                    </div>
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>120 متر</small>
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>3 غرف</small>
+                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>2 حمام</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/property-3.jpg" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">للبيع</div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">مكتب</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <h5 class="text-primary mb-3">1,200,000 ريال</h5>
+                                        <a class="d-block h5 mb-2" href="">Golden Urban House للبيع</a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>شارع التحلية، جدة</p>
+                                    </div>
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>120 متر</small>
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>3 غرف</small>
+                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>2 حمام</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/property-4.jpg" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">للإيجار</div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">عمارة</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <h5 class="text-primary mb-3">1,200,000 ريال</h5>
+                                        <a class="d-block h5 mb-2" href="">Golden Urban House للبيع</a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>شارع التحلية، جدة</p>
+                                    </div>
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>120 متر</small>
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>3 غرف</small>
+                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>2 حمام</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/property-5.jpg" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">للبيع</div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">منزل</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <h5 class="text-primary mb-3">1,200,000 ريال</h5>
+                                        <a class="d-block h5 mb-2" href="">Golden Urban House للبيع</a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>شارع التحلية، جدة</p>
+                                    </div>
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>120 متر</small>
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>3 غرف</small>
+                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>2 حمام</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/property-6.jpg" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">للإيجار</div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">محل</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <h5 class="text-primary mb-3">1,200,000 ريال</h5>
+                                        <a class="d-block h5 mb-2" href="">Golden Urban House للبيع</a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>شارع التحلية، جدة</p>
+                                    </div>
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>120 متر</small>
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>3 غرف</small>
+                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>2 حمام</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.1s">
+                                <a class="btn btn-primary py-3 px-5" href="">عرض المزيد من العقارات</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-2" class="tab-pane fade show p-0">
+                        <div class="row g-4">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/property-1.jpg" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">للبيع</div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">شقة</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <h5 class="text-primary mb-3">1,200,000 ريال</h5>
+                                        <a class="d-block h5 mb-2" href="">Golden Urban House للبيع</a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>شارع التحلية، جدة</p>
+                                    </div>
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>120 متر</small>
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>3 غرف</small>
+                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>2 حمام</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/property-2.jpg" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">للإيجار</div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">فيلا</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <h5 class="text-primary mb-3">1,200,000 ريال</h5>
+                                        <a class="d-block h5 mb-2" href="">Golden Urban House للبيع</a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>شارع التحلية، جدة</p>
+                                    </div>
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>120 متر</small>
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>3 غرف</small>
+                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>2 حمام</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/property-3.jpg" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">للبيع</div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">مكتب</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <h5 class="text-primary mb-3">1,200,000 ريال</h5>
+                                        <a class="d-block h5 mb-2" href="">Golden Urban House للبيع</a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>شارع التحلية، جدة</p>
+                                    </div>
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>120 متر</small>
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>3 غرف</small>
+                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>2 حمام</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/property-4.jpg" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">للإيجار</div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">عمارة</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <h5 class="text-primary mb-3">1,200,000 ريال</h5>
+                                        <a class="d-block h5 mb-2" href="">Golden Urban House للبيع</a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>شارع التحلية، جدة</p>
+                                    </div>
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>120 متر</small>
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>3 غرف</small>
+                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>2 حمام</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/property-5.jpg" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">للبيع</div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">منزل</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <h5 class="text-primary mb-3">1,200,000 ريال</h5>
+                                        <a class="d-block h5 mb-2" href="">Golden Urban House للبيع</a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>شارع التحلية، جدة</p>
+                                    </div>
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>120 متر</small>
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>3 غرف</small>
+                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>2 حمام</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/property-6.jpg" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">للإيجار</div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">محل</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <h5 class="text-primary mb-3">1,200,000 ريال</h5>
+                                        <a class="d-block h5 mb-2" href="">Golden Urban House للبيع</a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>شارع التحلية، جدة</p>
+                                    </div>
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>120 متر</small>
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>3 غرف</small>
+                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>2 حمام</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 text-center">
+                                <a class="btn btn-primary py-3 px-5" href="">عرض المزيد من العقارات</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-3" class="tab-pane fade show p-0">
+                        <div class="row g-4">
+                            <div class="col-lg-4 col-md-6">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/property-1.jpg" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">للبيع</div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">شقة</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <h5 class="text-primary mb-3">1,200,000 ريال</h5>
+                                        <a class="d-block h5 mb-2" href="">Golden Urban House للبيع</a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>شارع التحلية، جدة</p>
+                                    </div>
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>120 متر</small>
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>3 غرف</small>
+                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>2 حمام</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/property-2.jpg" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">للإيجار</div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">فيلا</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <h5 class="text-primary mb-3">1,200,000 ريال</h5>
+                                        <a class="d-block h5 mb-2" href="">Golden Urban House للبيع</a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>شارع التحلية، جدة</p>
+                                    </div>
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>120 متر</small>
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>3 غرف</small>
+                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>2 حمام</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/property-3.jpg" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">للبيع</div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">مكتب</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <h5 class="text-primary mb-3">1,200,000 ريال</h5>
+                                        <a class="d-block h5 mb-2" href="">Golden Urban House للبيع</a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>شارع التحلية، جدة</p>
+                                    </div>
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>120 متر</small>
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>3 غرف</small>
+                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>2 حمام</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/property-4.jpg" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">للإيجار</div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">عمارة</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <h5 class="text-primary mb-3">1,200,000 ريال</h5>
+                                        <a class="d-block h5 mb-2" href="">Golden Urban House للبيع</a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>شارع التحلية، جدة</p>
+                                    </div>
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>120 متر</small>
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>3 غرف</small>
+                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>2 حمام</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/property-5.jpg" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">للبيع</div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">منزل</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <h5 class="text-primary mb-3">1,200,000 ريال</h5>
+                                        <a class="d-block h5 mb-2" href="">Golden Urban House للبيع</a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>شارع التحلية، جدة</p>
+                                    </div>
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>120 متر</small>
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>3 غرف</small>
+                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>2 حمام</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="property-item rounded overflow-hidden">
+                                    <div class="position-relative overflow-hidden">
+                                        <a href=""><img class="img-fluid" src="img/property-6.jpg" alt=""></a>
+                                        <div class="bg-primary rounded text-white position-absolute start-0 top-0 m-4 py-1 px-3">للإيجار</div>
+                                        <div class="bg-white rounded-top text-primary position-absolute start-0 bottom-0 mx-4 pt-1 px-3">محل</div>
+                                    </div>
+                                    <div class="p-4 pb-0">
+                                        <h5 class="text-primary mb-3">1,200,000 ريال</h5>
+                                        <a class="d-block h5 mb-2" href="">Golden Urban House للبيع</a>
+                                        <p><i class="fa fa-map-marker-alt text-primary me-2"></i>شارع التحلية، جدة</p>
+                                    </div>
+                                    <div class="d-flex border-top">
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-ruler-combined text-primary me-2"></i>120 متر</small>
+                                        <small class="flex-fill text-center border-end py-2"><i class="fa fa-bed text-primary me-2"></i>3 غرف</small>
+                                        <small class="flex-fill text-center py-2"><i class="fa fa-bath text-primary me-2"></i>2 حمام</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 text-center">
+                                <a class="btn btn-primary py-3 px-5" href="">عرض المزيد من العقارات</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Property List End -->
+
+        <div class="container-xxl py-5">
+            <div class="container">
+                <div class="bg-light rounded p-3">
+                    <div class="bg-light rounded px-0 py-1">
+                        <div class="row align-items-center">
+                            <div class="col-lg-4 wow fadeIn" data-wow-delay="0.1s">
+                                <div class="cat-item d-block bg-light rounded p-3">
+                                    <div class="rounded p-4">
+                                        <h4>للمشتري</h4>
+                                        <p>نوفر لك أفضل العقارات في جدة مع حلول تمويلية تناسب ميزانيتك، ونرافقك في كل خطوة حتى تملك منزل أحلامك</p>
+                                        <ul class="features-list">
+                                            <li>مئات العقارات في أرقى الأحياء</li>
+                                            <li>مساعدة في إجراءات الشراء</li>
+                                            <li>حاسبة تمويل ذكية</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 wow fadeIn" data-wow-delay="0.2s">
+                                <div class="cat-item d-block bg-light rounded p-3">
+                                    <div class="rounded p-4">
+                                        <h4>للمالك</h4>
+                                        <p>  يمكنك عرض عقارك بكل احترافية لتجد المشترين بدون الحاجة إلى تواجدك في المدينة</p>
+                                        <ul class="features-list">
+                                            <li>إمكانية عرض العقار مع الصور وجميع التفاصيل</li>
+                                            <li>متابعة عملية البيع بجميع تفاصيلها عبر المنصة</li>
+                                            <li>إتمام البيع إلكترونيًا بطريقة آمنة</li>
+                                        </ul>   
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 wow fadeIn" data-wow-delay="0.3s">
+                                <div class="cat-item d-block bg-light rounded p-3">
+                                    <div class="rounded p-4">
+                                        <h4>للمطور العقاري</h4>
+                                        <p>نساعدك في تسويق مشاريعك العقارية بأحدث الأساليب والتقنيات، ونضمن لك الوصول إلى أكبر شريحة من العملاء المستهدفين</p>
+                                        <ul class="features-list">
+                                            <li>تسويق رقمي متكامل لمشاريعك</li>
+                                            <li>إدارة حملات إعلانية احترافية</li>
+                                            <li>حلول تمويلية لعملائك</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Call to Action Start -->
+        <!-- <div class="container-xxl py-5">
+            <div class="container">
+                <div class="bg-light rounded p-3">
+                    <div class="bg-white rounded p-4" style="border: 1px dashed rgba(0, 185, 142, .3)">
+                        <div class="row g-5 align-items-center">
+                            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
+                                <img class="img-fluid rounded w-100" src="img/call-to-action.jpg" alt="">
+                            </div>
+                            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                                <div class="mb-4">
+                                    <h1 class="mb-3">تواصل مع وكيلنا المعتمد</h1>
+                                    <p>نحن هنا لنحول رؤيتك إلى واقع. فريقنا جاهز لخدمتك في كل خطوة من رحلتك العقارية.</p>
+                                </div>
+                                <a href="" class="btn btn-primary py-3 px-4 me-2"><i class="fa fa-phone-alt me-2"></i>اتصل بنا</a>
+                                <a href="" class="btn btn-dark py-3 px-4"><i class="fa fa-calendar-alt me-2"></i>احجز موعد</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Call to Action End -->
+
+
+        <!-- Team Start -->
+        <!-- <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">وكلاء العقارات</h1>
+                    <p>فريقنا من الخبراء العقاريين جاهز لمساعدتك في العثور على العقار المثالي أو بيع عقارك بأفضل الأسعار.</p>
+                </div>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="team-item rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="img/team-1.jpg" alt="">
+                                <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="text-center p-4 mt-3">
+                                <h5 class="fw-bold mb-0">Full Name</h5>
+                                <small>Designation</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="team-item rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="img/team-2.jpg" alt="">
+                                <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="text-center p-4 mt-3">
+                                <h5 class="fw-bold mb-0">Full Name</h5>
+                                <small>Designation</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
+                        <div class="team-item rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="img/team-3.jpg" alt="">
+                                <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="text-center p-4 mt-3">
+                                <h5 class="fw-bold mb-0">Full Name</h5>
+                                <small>Designation</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.7s">
+                        <div class="team-item rounded overflow-hidden">
+                            <div class="position-relative">
+                                <img class="img-fluid" src="img/team-4.jpg" alt="">
+                                <div class="position-absolute start-50 top-100 translate-middle d-flex align-items-center">
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-twitter"></i></a>
+                                    <a class="btn btn-square mx-1" href=""><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                            <div class="text-center p-4 mt-3">
+                                <h5 class="fw-bold mb-0">Full Name</h5>
+                                <small>Designation</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Team End -->
+
+
+        <!-- Testimonial Start -->
+        <!-- <div class="container-xxl py-5">
+            <div class="container">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+                    <h1 class="mb-3">Our Clients Say!</h1>
+                    <p>Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
+                </div>
+                <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="testimonial-item bg-light rounded p-3">
+                        <div class="bg-white border rounded p-4">
+                            <p>Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet. Est stet ea lorem amet est kasd kasd erat eos</p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-1.jpg" style="width: 45px; height: 45px;">
+                                <div class="ps-3">
+                                    <h6 class="fw-bold mb-1">Client Name</h6>
+                                    <small>Profession</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded p-3">
+                        <div class="bg-white border rounded p-4">
+                            <p>Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet. Est stet ea lorem amet est kasd kasd erat eos</p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-2.jpg" style="width: 45px; height: 45px;">
+                                <div class="ps-3">
+                                    <h6 class="fw-bold mb-1">Client Name</h6>
+                                    <small>Profession</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item bg-light rounded p-3">
+                        <div class="bg-white border rounded p-4">
+                            <p>Tempor stet labore dolor clita stet diam amet ipsum dolor duo ipsum rebum stet dolor amet diam stet. Est stet ea lorem amet est kasd kasd erat eos</p>
+                            <div class="d-flex align-items-center">
+                                <img class="img-fluid flex-shrink-0 rounded" src="img/testimonial-3.jpg" style="width: 45px; height: 45px;">
+                                <div class="ps-3">
+                                    <h6 class="fw-bold mb-1">Client Name</h6>
+                                    <small>Profession</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- Testimonial End -->
+        
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5 wow fadeIn" data-wow-delay="0.1s">
+            <div class="container py-5">
+                <div class="row g-5" style="justify-content: center;">
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">تواصل معنا</h5>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt" style="margin-left:1rem;"></i>جدة، المملكة العربية السعودية</p>
+                        <a class="btn btn-link text-white-50" dir="ltr" href="tel:+966552299994">+966552299994<i class="fa fa-phone-alt" style="margin-left:1rem;"></i></a>
+                        <a class="btn btn-link text-white-50" dir="ltr" href="mailto:eskanalroayaalbayda@gmail.com">eskanalroayaalbayda@gmail.com<i class="fa fa-envelope" style="margin-left:1rem;"></i></a>
+                        <div class="d-flex pt-2 ps-3">
+                            <svg style="margin:0 0.5rem 0 0.5rem;" fill="currentColor" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                                <a target="_blank" rel="noopener noreferrer" xlink:href="https://www.facebook.com/profile.php?id=61582482845487">
+                                    <path d="M16,2c-7.732,0-14,6.268-14,14,0,6.566,4.52,12.075,10.618,13.588v-9.31h-2.887v-4.278h2.887v-1.843c0-4.765,2.156-6.974,6.835-6.974,.887,0,2.417,.174,3.043,.348v3.878c-.33-.035-.904-.052-1.617-.052-2.296,0-3.183,.87-3.183,3.13v1.513h4.573l-.786,4.278h-3.787v9.619c6.932-.837,12.304-6.74,12.304-13.897,0-7.732-6.268-14-14-14Z">                        
+                                    </path>
+                                </a>
+                            </svg>
+                            <svg style="margin:0 0.5rem 0 0.5rem;" fill="currentColor" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                                <a target="_blank" rel="noopener noreferrer" xlink:href="https://www.snapchat.com/@erbjeddah">
+                                    <path d="M30.893,22.837c-.208-.567-.606-.871-1.058-1.122-.085-.05-.163-.09-.23-.12-.135-.07-.273-.137-.41-.208-1.41-.747-2.51-1.69-3.274-2.808-.217-.315-.405-.648-.562-.996-.065-.186-.062-.292-.015-.389,.046-.074,.108-.138,.18-.188,.242-.16,.492-.323,.661-.432,.302-.195,.541-.35,.695-.46,.579-.405,.983-.835,1.236-1.315,.357-.672,.404-1.466,.13-2.175-.383-1.009-1.336-1.635-2.49-1.635-.243,0-.486,.025-.724,.077-.064,.014-.127,.028-.189,.044,.011-.69-.005-1.418-.066-2.135-.218-2.519-1.1-3.84-2.02-4.893-.589-.66-1.283-1.218-2.053-1.653-1.396-.797-2.979-1.202-4.704-1.202s-3.301,.405-4.698,1.202c-.773,.434-1.468,.994-2.057,1.656-.92,1.053-1.802,2.376-2.02,4.893-.061,.717-.077,1.449-.067,2.135-.062-.016-.125-.031-.189-.044-.238-.051-.481-.077-.724-.077-1.155,0-2.109,.626-2.491,1.635-.276,.71-.23,1.505,.126,2.178,.254,.481,.658,.911,1.237,1.315,.153,.107,.393,.262,.695,.46,.163,.106,.402,.261,.635,.415,.082,.053,.151,.123,.204,.205,.049,.1,.051,.208-.022,.408-.155,.341-.34,.668-.553,.976-.747,1.092-1.815,2.018-3.179,2.759-.723,.383-1.474,.639-1.791,1.502-.239,.651-.083,1.391,.525,2.015h0c.223,.233,.482,.429,.766,.58,.592,.326,1.222,.578,1.876,.75,.135,.035,.263,.092,.379,.169,.222,.194,.19,.486,.485,.914,.148,.221,.336,.412,.555,.564,.619,.428,1.315,.455,2.053,.483,.666,.025,1.421,.054,2.283,.339,.357,.118,.728,.346,1.158,.613,1.032,.635,2.446,1.503,4.811,1.503s3.789-.873,4.829-1.51c.427-.262,.796-.488,1.143-.603,.862-.285,1.617-.313,2.283-.339,.737-.028,1.433-.055,2.053-.483,.259-.181,.475-.416,.632-.69,.212-.361,.207-.613,.406-.789,.109-.074,.229-.129,.356-.162,.662-.173,1.301-.428,1.901-.757,.302-.162,.575-.375,.805-.63l.008-.009c.57-.61,.714-1.329,.48-1.964Zm-2.102,1.13c-1.282,.708-2.135,.632-2.798,1.059-.563,.363-.23,1.144-.639,1.426-.503,.347-1.989-.025-3.909,.609-1.584,.524-2.594,2.029-5.442,2.029s-3.835-1.502-5.444-2.033c-1.916-.634-3.406-.262-3.909-.609-.409-.282-.077-1.064-.639-1.426-.664-.427-1.516-.351-2.798-1.055-.816-.451-.353-.73-.081-.862,4.645-2.249,5.386-5.721,5.419-5.979,.04-.312,.084-.557-.259-.875-.332-.307-1.804-1.218-2.213-1.503-.676-.472-.973-.944-.754-1.523,.153-.401,.527-.552,.92-.552,.124,0,.248,.014,.369,.041,.742,.161,1.462,.533,1.879,.633,.05,.013,.102,.02,.153,.021,.222,0,.3-.112,.285-.366-.048-.812-.162-2.394-.034-3.872,.176-2.034,.831-3.042,1.61-3.934,.374-.428,2.132-2.286,5.493-2.286s5.123,1.85,5.497,2.276c.78,.891,1.436,1.899,1.61,3.934,.128,1.479,.018,3.061-.034,3.872-.018,.268,.063,.366,.285,.366,.052,0,.103-.008,.153-.021,.417-.1,1.137-.472,1.879-.633,.121-.027,.245-.041,.369-.041,.395,0,.766,.153,.92,.552,.219,.579-.077,1.051-.753,1.523-.409,.285-1.881,1.196-2.213,1.503-.344,.317-.299,.563-.259,.875,.033,.261,.773,3.734,5.419,5.979,.274,.137,.737,.416-.079,.871Z">                        
+                                    </path>
+                                </a>
+                            </svg>
+                            <svg style="margin:0 0.5rem 0 0.5rem;" fill="currentColor" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                                <a target="_blank" rel="noopener noreferrer" xlink:href="https://www.tiktok.com/@erbjeddah">
+                                    <path d="M24.562,7.613c-1.508-.983-2.597-2.557-2.936-4.391-.073-.396-.114-.804-.114-1.221h-4.814l-.008,19.292c-.081,2.16-1.859,3.894-4.039,3.894-.677,0-1.315-.169-1.877-.465-1.288-.678-2.169-2.028-2.169-3.582,0-2.231,1.815-4.047,4.046-4.047,.417,0,.816,.069,1.194,.187v-4.914c-.391-.053-.788-.087-1.194-.087-4.886,0-8.86,3.975-8.86,8.86,0,2.998,1.498,5.65,3.783,7.254,1.439,1.01,3.19,1.606,5.078,1.606,4.886,0,8.86-3.975,8.86-8.86V11.357c1.888,1.355,4.201,2.154,6.697,2.154v-4.814c-1.345,0-2.597-.4-3.647-1.085Z">                        
+                                    </path>
+                                </a>
+                            </svg>
+                            <svg style="margin:0 0.5rem 0 0.5rem;" fill="currentColor" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                                <a target="_blank" rel="noopener noreferrer" xlink:href="https://x.com/ERBjeddah">
+                                    <path d="M18.42,14.009L27.891,3h-2.244l-8.224,9.559L10.855,3H3.28l9.932,14.455L3.28,29h2.244l8.684-10.095,6.936,10.095h7.576l-10.301-14.991h0Zm-3.074,3.573l-1.006-1.439L6.333,4.69h3.447l6.462,9.243,1.006,1.439,8.4,12.015h-3.447l-6.854-9.804h0Z">                        
+                                    </path>
+                                </a>
+                            </svg>
+                            <svg style="margin:0 0.5rem 0 0.5rem;" fill="currentColor" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+                                <a target="_blank" rel="noopener noreferrer" xlink:href="https://www.youtube.com/@ERBjeddah">
+                                    <path d="M31.331,8.248c-.368-1.386-1.452-2.477-2.829-2.848-2.496-.673-12.502-.673-12.502-.673,0,0-10.007,0-12.502,.673-1.377,.37-2.461,1.462-2.829,2.848-.669,2.512-.669,7.752-.669,7.752,0,0,0,5.241,.669,7.752,.368,1.386,1.452,2.477,2.829,2.847,2.496,.673,12.502,.673,12.502,.673,0,0,10.007,0,12.502-.673,1.377-.37,2.461-1.462,2.829-2.847,.669-2.512,.669-7.752,.669-7.752,0,0,0-5.24-.669-7.752ZM12.727,20.758V11.242l8.364,4.758-8.364,4.758Z">
+                                    </path>
+                                </a>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">معرض الصور</h5>
+                        <div class="row g-2 pt-2">
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/property-1.jpg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/property-2.jpg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/property-3.jpg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/property-4.jpg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/property-5.jpg" alt="">
+                            </div>
+                            <div class="col-4">
+                                <img class="img-fluid rounded bg-light p-1" src="img/property-6.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <h5 class="text-white mb-4">النشرة الإخبارية</h5>
+                        <p>اشترك في نشرتنا الإخبارية للحصول على آخر العروض والعقارات الجديدة.</p>
+                        <div class="position-relative mx-auto" style="max-width: 400px;">
+                            <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="بريدك الإلكتروني">
+                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 start-0 mt-2 me-2" style="border-color: transparent;background: transparent;">اشتراك</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="copyright">
+                    <div class="row" style="justify-content: center;">
+                        <div class="col-md-6 text-center mb-3 mb-md-0">
+                            &copy; <a class="border-bottom" href="#">إسكان الرؤيا البيضاء</a>, جميع الحقوق محفوظة. 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
+
+
+        <!-- Back to Top -->
+        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+    </div>
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
